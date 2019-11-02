@@ -1,0 +1,16 @@
+.navigation {
+  height: 100%;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+
+  .section {
+    background-color: $dark;
+    flex: 0.25;
+  }
+
+  .section:nth-child(odd){
+      background-color: lighten($dark, $amount: 5);
+  }
+
+}

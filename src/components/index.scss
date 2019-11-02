@@ -1,0 +1,23 @@
+$background: #AAABB8;
+$dark: #25274D;
+$dark-lighter: #464866;
+
+
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "./nav/_Nav.scss";
+
+.app-container {
+  display: flex;
+  overflow: hidden;
+
+  .nav-container {
+    flex: 0.15;
+    height: 100vh;
+  }
+
+  .main-content {
+    flex: 0.85;
+    padding: 20px;
+    overflow: scroll;
+  }
+}
